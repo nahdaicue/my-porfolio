@@ -1,0 +1,7 @@
+.header-container {
+    display: flex;        /* Activa Flexbox */
+    justify-content: space-between;  /* Espacia los elementos: uno a la izquierda y otro a la derecha */
+    align-items: center;  /* Alinea verticalmente los elementos al centro del contenedor */
+    padding: 10px;        /* Ajusta el espaciado interno (opcional) */
+    background-color: black; /* Color de fondo para el header */
+}
