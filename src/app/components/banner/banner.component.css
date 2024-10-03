@@ -2,3 +2,7 @@ img{
     width: 100%;
     height: 600px;
 }
+.container-fluid{
+    /* bootstrap viene por defecto con 15px de padding y con esto lo quito :) */
+    padding: 0;
+}

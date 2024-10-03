@@ -1,0 +1,42 @@
+.row{
+    padding: 20px;
+}
+div{
+    background-color: antiquewhite;
+    text-align: center;
+}
+.nombre{
+    font-weight: bold;
+    margin-top: 30%;
+}
+
+/* bloque de CSS que utiliza una media query, para hacer que el diseño sea responsivo */
+@media(min-width: 576px){
+    .img{
+        position:absolute;
+        width: 15%;
+        border-radius: 50%;
+        /* box-shadow: 3px 3px 3px gray; */
+        left: 4%;
+        top: 600px;
+    }
+
+    
+}
+
+@media(max-width: 575px){
+    .img{
+        position:absolute;
+        width: 30%;
+        border-radius: 50%;
+        /* box-shadow: 3px 3px 3px gray; */
+        left: 50%;
+        transform: translateX(-50%);
+
+        /* Para centrar verticalmente (ajusta si es necesario) */
+        top: 150%;
+        transform: translate(-50%, -50%);
+    }
+
+    
+}
