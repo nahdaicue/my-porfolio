@@ -1,0 +1,12 @@
+.project {
+    padding: 20px;
+}
+
+.project-text {
+    text-align: justify;
+}
+
+.project-img {
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px black;
+}
