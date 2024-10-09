@@ -1,42 +1,43 @@
-.row{
+.row {
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en nuevas filas si es necesario */
+    align-items: center;
+    align-content: center;
 }
-div{
-    background-color: antiquewhite;
+div {
+    background-color: #373e5a;
     text-align: center;
+    color: #eec295;
 }
-.nombre{
+.nombre {
     font-weight: bold;
-    margin-top: 30%;
+    margin-top: 10px;
 }
 
-/* bloque de CSS que utiliza una media query, para hacer que el diseño sea responsivo */
-@media(min-width: 576px){
-    .img{
-        position:absolute;
-        width: 15%;
+/* Media query para pantallas pequeñas */
+@media (max-width: 575px) {
+    .nombre {
+        margin-top: 0; /* Elimina el margen superior en pantallas pequeñas */
+    }
+
+    .img {
+        width: 50%;
         border-radius: 50%;
-        /* box-shadow: 3px 3px 3px gray; */
+        margin-bottom: 10px;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+    }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 576px) {
+    .img {
+        width: 100%;    
+        border-radius: 50%;
         left: 4%;
         top: 600px;
     }
-
-    
-}
-
-@media(max-width: 575px){
-    .img{
-        position:absolute;
-        width: 30%;
-        border-radius: 50%;
-        /* box-shadow: 3px 3px 3px gray; */
-        left: 50%;
-        transform: translateX(-50%);
-
-        /* Para centrar verticalmente (ajusta si es necesario) */
-        top: 150%;
-        transform: translate(-50%, -50%);
-    }
-
-    
 }
