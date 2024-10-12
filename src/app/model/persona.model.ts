@@ -1,4 +1,4 @@
-export class persona {
+export class Persona {
     // el ? es para decirle que puede tenerlo o no
     id?: number;
     nombre: String;
