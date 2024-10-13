@@ -9,14 +9,19 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class AboutComponent implements OnInit {
   
-  persona: Persona = new Persona("","","");
+  persona: Persona = new Persona("Nahuel"," ","");
 
   constructor(private personaService: PersonaService){}
   
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => {
-      this.persona = data;
-    });
+  this.personaService.getPersona().subscribe(data => {
+    if (data.length > 0) {
+      this.persona = data[0]; // Obtén la primera persona del arreglo.
+    }
+    console.log('Datos recibidos:', this.persona);
+  }, error => {
+    console.error('Error al obtener los datos:', error);
+  });
+}
 
-  }
 }
