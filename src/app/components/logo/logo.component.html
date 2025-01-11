@@ -1,18 +1,23 @@
+<div class="container">
+    <div class="logo">
+        <img src="../../../assets/img/APLogo.png" alt="Imagen logo" id="logo" />
+    </div>
 
-    <div class="container">
-        
-        <div class="logo">
-            <img src="../../../assets/img/APLogo.png" alt="Imagen logo" id="logo">
-        </div>
-
-        <div class="social">
-            <div>
-                <a href=""><img src="../../../assets/img/linkedin.png" alt="linkedin" id="linkedin"></a>
-                <a href=""><img src="../../../assets/img/github.png" alt="github" id="github"></a>
-                <a href=""><img src="../../../assets/img/facebook.png" alt="facebook" id="facebook"></a>
-                <a href=""><img src="../../../assets/img/instagram.png" alt="instagram" id="instagram"></a>
-                <a href=""><img src="../../../assets/img/twitter.png" alt="twitter" id="twitter"></a>
-                <button type="button" class="btn btn-outline-light btn-sm" (click)="login()">Login</button>
-            </div>
+    <div class="social">
+        <div>
+            <a href="https://www.linkedin.com/in/nahuel-cuello/" target="_blank"><img
+                    src="../../../assets/img/linkedin.png" alt="linkedin" id="linkedin" /></a>
+            <a href="https://github.com/nahdaicue" target="_blank"><img src="../../../assets/img/github.png"
+                    alt="github" id="github" /></a>
+            <!-- <a href=""><img src="../../../assets/img/facebook.png" alt="facebook" id="facebook"></a> -->
+            <!-- <a href=""><img src="../../../assets/img/instagram.png" alt="instagram" id="instagram"></a> -->
+            <!-- <a href=""><img src="../../../assets/img/twitter.png" alt="twitter" id="twitter"></a> -->
+            <button type="button" class="btn btn-outline-light btn-sm" (click)="login()" *ngIf="!isLogged">
+                Login
+            </button>
+            <button type="button" class="btn btn-outline-light btn-sm" (click)="onLogOut()" *ngIf="isLogged">
+                LogOut
+            </button>
         </div>
     </div>
+</div>

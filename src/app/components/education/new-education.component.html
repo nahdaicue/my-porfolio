@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()">
+                <div class="form-group">
+                    <label for="nameExp">Nombre de institución</label>
+                    <input type="text" class="form-control" id="nameExp" name="nameExp" [(ngModel)]="nameStudy" required>
+                </div>
+                <div class="form-group">
+                    <label for="descriptionExp">Descripción de estudio</label>
+                    <input type="text" class="form-control" id="descriptionExp" name="descriptionExp" [(ngModel)]="descriptionStudy" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

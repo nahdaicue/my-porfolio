@@ -1,6 +1,86 @@
-.row{
-    padding: 20px;
-    background-color: #b4b4b4;
-    /* color: #eec295; */
-    /* background-color: rgb(237, 241, 245); */
+/* Sección principal con fondo gris claro */
+.modern-style-education {
+  padding: 30px;
+  background-color: #b4b4b4; /* Gris claro */
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos */
+h2 {
+  font-size: 2rem;
+  color: #333; /* Gris oscuro para el título */
+}
+
+/* Botones */
+.btn-custom {
+  background-color: #3c4d68; /* Un tono más oscuro para los botones */
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #2c3c50; /* Fondo más oscuro en hover */
+}
+
+/* Tabla */
+.table-hover {
+  margin-top: 20px;
+  width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Espaciado entre filas */
+}
+
+.education-row {
+  background-color: #f8f9fa; /* Fondo gris muy claro para las filas */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto de hover */
+.education-row:hover {
+  background-color: #e0e0e0; /* Fondo gris ligeramente más oscuro al pasar el mouse */
+  transform: scale(1.05);
+}
+
+.education-row td {
+  padding: 15px;
+  vertical-align: middle;
+  color: #333; /* Color más oscuro para el texto dentro de la tabla */
+}
+
+.education-row h4 {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Descripción de la educación con texto gris */
+.education-description {
+  color: #666;
+}
+
+.education-row .text-muted {
+  font-size: 0.9rem;
+  color: #666; /* Gris más suave para la descripción */
+}
+
+/* Botones dentro de la tabla */
+.btn-light {
+  background-color: #f8f9fa;
+  color: #333;
+  border: none;
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
 }

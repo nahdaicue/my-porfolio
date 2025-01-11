@@ -1,21 +1,49 @@
-<div class="row">
-    <h2>Educación</h2>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        <ul class="list">
-            <li>
-                <h3>Estudio 1 - Year</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia obcaecati error expedita, necessitatibus odit dolorem animi asperiores voluptates inventore maxime esse vitae dolores omnis quibusdam possimus quo deserunt ipsa magni.</p>
-            </li>
-            <li>
-                <h3>Estudio 2 - Year</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia obcaecati error expedita, necessitatibus odit dolorem animi asperiores voluptates inventore maxime esse vitae dolores omnis quibusdam possimus quo deserunt ipsa magni.</p>
-            </li>
-            <li>
-                <h3>Estudio 3 - Year</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia obcaecati error expedita, necessitatibus odit dolorem animi asperiores voluptates inventore maxime esse vitae dolores omnis quibusdam possimus quo deserunt ipsa magni.</p>
-            </li>
-        </ul>
-    </div>
-    
+<div class="row modern-style-education">
+  <div class="col-12 mb-4 text-center">
+    <h2 class="fw-bold">Educación</h2>
+  </div>
+
+  <div class="col-12 d-flex justify-content-end mb-3">
+    <button
+      type="button"
+      class="btn btn-dark"
+      routerLink="/new-education"
+      *ngIf="isLogged"
+    >
+      Añadir Educación
+    </button>
+  </div>
+
+  <div class="col-12">
+    <table class="table table-hover">
+      <tbody>
+        <tr *ngFor="let education of education" class="education-row">
+          <td class="education-name py-3">
+            <h4 class="m-0">{{ education.nameEducation }}</h4>
+          </td>
+          <td class="education-description py-3 text-muted">
+            {{ education.descriptionEducation }}
+          </td>
+          <td *ngIf="isLogged" class="text-end py-3">
+            <button
+              type="button"
+              class="btn btn-light btn-sm me-2"
+              routerLink="/edit-education/{{ education.id }}"
+              title="Editar"
+            >
+              <i class="bi bi-pencil"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger btn-sm"
+              (click)="delete(education.id)"
+              title="Eliminar"
+            >
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

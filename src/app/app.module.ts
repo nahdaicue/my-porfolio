@@ -16,6 +16,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './service/interceptor.service';
+import { NewExperienceComponent } from './components/experience/new-experience.component';
+import { EditExperienceComponent } from './components/experience/edit-experience.component';
+import { NewEducationComponent } from './components/education/new-education.component';
+import { EditEducationComponent } from './components/education/edit-education.component';
 
 
 @NgModule({
@@ -31,15 +37,22 @@ import { LoginComponent } from './components/login/login.component';
     ProjectComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NewExperienceComponent,
+    EditExperienceComponent,
+    NewEducationComponent,
+    EditEducationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

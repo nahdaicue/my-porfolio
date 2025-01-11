@@ -9,7 +9,7 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class AboutComponent implements OnInit {
   
-  persona: Persona = new Persona("Nahuel"," ","");
+  persona: Persona = new Persona("Nahuel","Cuello","");
 
   constructor(private personaService: PersonaService){}
   
@@ -18,7 +18,7 @@ export class AboutComponent implements OnInit {
     if (data.length > 0) {
       this.persona = data[0]; // Obtén la primera persona del arreglo.
     }
-    console.log('Datos recibidos:', this.persona);
+    console.log('Datos recibidos:', this.persona.nombre);
   }, error => {
     console.error('Error al obtener los datos:', error);
   });

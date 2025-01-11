@@ -1,13 +1,87 @@
-.row{
-    padding: 20px;
-    background-color: #99a0c0;
-    /* color: #eec295; */
-    /* background-color: antiquewhite; */
-}
- 
-/* 
-    #962715
-    #ffffff
-    #E1E120
-    #bbc3c6   
-*/
+/* Sección principal con fondo gris oscuro */
+.modern-style-dark {
+    padding: 30px;
+    background-color: #333; /* Gris oscuro */
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Títulos */
+  h2 {
+    font-size: 2rem;
+    color: #ffffff; /* Blanco para el título */
+  }
+  
+  /* Botones */
+  .btn-custom {
+    background-color: #3c4d68; /* Un tono más oscuro para los botones */
+    color: white;
+    border: none;
+  }
+  
+  .btn-custom:hover {
+    background-color: #2c3c50; /* Fondo más oscuro en hover */
+  }
+  
+  /* Tabla */
+  .table-hover {
+    margin-top: 20px;
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Espaciado entre filas */
+  }
+  
+  .exp-row {
+    background-color: #444; /* Fondo gris más oscuro para las filas */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Efecto de hover */
+  .exp-row:hover {
+    background-color: #555; /* Fondo gris ligeramente más claro al pasar el mouse */
+    transform: scale(1.05);
+  }
+  
+  .exp-row td {
+    padding: 15px;
+    vertical-align: middle;
+    color: #f1f1f1; /* Color más claro para el texto dentro de la tabla */
+  }
+  
+  .exp-row h4 {
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Descripción de la experiencia laboral con texto negro */
+  .exp-description {
+    color: #000000;
+  }
+  
+  .exp-row .text-muted {
+    font-size: 0.9rem;
+    color: #bbb; /* Gris más suave para la descripción */
+  }
+  
+  /* Botones dentro de la tabla */
+  .btn-light {
+    background-color: #f8f9fa;
+    color: #333;
+    border: none;
+  }
+  
+  .btn-light:hover {
+    background-color: #e2e6ea;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
